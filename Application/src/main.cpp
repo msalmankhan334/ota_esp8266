@@ -8,8 +8,8 @@ BearSSL::CertStore certStore;
 #include <time.h>
  
 const String FirmwareVer={"1.8"}; 
-#define URL_fw_Version "/programmer131/otaFiles/master/version.txt"
-#define URL_fw_Bin "https://raw.githubusercontent.com/programmer131/otaFiles/master/firmware.bin"
+#define URL_fw_Version "/ota_esp8266/blob/main/BinVersion/bin_version.txt"
+#define URL_fw_Bin "https://raw.githubusercontent.com/msalmankhan334/ota_esp8266/main/BinVersion/firmware.bin"
 const char* host = "raw.githubusercontent.com";
 const int httpsPort = 443;
 
@@ -44,8 +44,8 @@ X509List cert(trustRoot);
 extern const unsigned char caCert[] PROGMEM;
 extern const unsigned int caCertLen;
 
-const char* ssid = "home_wifi";
-const char* password = "helloworld";
+const char* ssid = "ManHa";
+const char* password = "123456789012345";
 
 void setClock() {
    // Set time via NTP, as required for x.509 validation
